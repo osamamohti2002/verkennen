@@ -1,0 +1,54 @@
+select * from teachers; #13:33:16@dvc-sd.db
+select lastname from teachers; #13:35:48@dvc-sd.db
+select lastname, firstname from teachers; #13:36:11@dvc-sd.db
+select * from teachers; #13:36:40@dvc-sd.db
+select firstname from teachers where id > 3; #13:39:04@dvc-sd.db
+select * from teachers where id > 3; #13:42:41@dvc-sd.db
+select firstname from teachers where id > 3; #13:43:10@dvc-sd.db
+select firstname from teachers where id = 3; #13:44:14@dvc-sd.db
+select firstname from teachers where id > 3; #13:44:20@dvc-sd.db
+select firstname from teachers where id < 3; #13:44:25@dvc-sd.db
+select firstname from teachers where id > 3; #13:44:31@dvc-sd.db
+select * from animal; #13:45:52@rubyquest.db
+select * from armor; #13:46:09@rubyquest.db
+select * from weapon; #13:46:20@rubyquest.db
+select * from weapon where id = 45
+; #13:46:46@rubyquest.db
+select * from weapon where id = 3
+; #13:46:53@rubyquest.db
+select * from region 
+; #13:47:10@rubyquest.db
+select * from hero; #13:49:53@rubyquest.db
+select * from person; #13:51:12@rubyquest.db
+select * from hero
+; #13:54:04@rubyquest.db
+select * from hero
+; #13:54:19@rubyquest.db
+select * from hero
+; #13:54:19@rubyquest.db
+select * from hero
+; #13:54:19@rubyquest.db
+select * from hero; #13:54:40@rubyquest.db
+select * from hero; #13:56:00@rubyquest.db
+select * from creature; #13:57:54@rubyquest.db
+select * from quest; #13:58:48@rubyquest.db
+select * from quest; #13:59:00@rubyquest.db
+select * from quest; #13:59:01@rubyquest.db
+select * from quest; #13:59:01@rubyquest.db
+select * from quest; #13:59:02@rubyquest.db
+select * from quest; #13:59:02@rubyquest.db
+select * from quest; #14:00:10@rubyquest.db
+select * from armor; #14:01:52@rubyquest.db
+select * from armor; #14:02:46@rubyquest.db
+select name from armor; #14:02:52@rubyquest.db
+select * from weapon; #14:03:38@rubyquest.db
+select name , attack from weapon; #14:04:18@rubyquest.db
+select * from creature; #14:06:00@rubyquest.db
+select * from creature; #14:06:57@rubyquest.db
+select name, health from creature; #14:07:25@rubyquest.db
+select name, health from creature; #14:08:14@rubyquest.db
+select * from person where id = 7; #14:13:25@rubyquest.db
+select * from region; #14:14:33@rubyquest.db
+select * from quest; #14:15:51@rubyquest.db
+select title from quest where gold = 0; #14:16:32@rubyquest.db
+select * from quest where gold = 0; #14:16:41@rubyquest.db

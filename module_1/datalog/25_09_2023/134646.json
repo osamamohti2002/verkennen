@@ -1,0 +1,12 @@
+{
+    "query": "select * from weapon where id = 45\n",
+    "resultcount": 1,
+    "result": [
+        {
+            "id": 45,
+            "name": "bow",
+            "price": 525,
+            "attack": 900
+        }
+    ]
+}
