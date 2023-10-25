@@ -1,0 +1,9 @@
+create table product (
+id INTEGER PRIMARY KEY,
+naam varcher (25),
+soort integer,
+prijs real,
+prijs_10 real,
+allergenen varcher (50)
+)
+; #09:51:20@oliebollenkram.db
