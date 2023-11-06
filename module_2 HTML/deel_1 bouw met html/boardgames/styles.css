@@ -1,1 +1,21 @@
-
+body{
+    background-color: black;
+    
+}
+header{
+    background-color: red;
+   
+}
+h2{
+    color: white;
+}
+h3{
+    color:yellow;
+    
+}
+p{
+    color:white ;
+}
+ul{
+    color: rgb(123, 228, 123);
+}
