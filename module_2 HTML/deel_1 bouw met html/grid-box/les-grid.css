@@ -10,16 +10,23 @@ div.grid-container-1>*, div.grid-container-2>*, div.grid-container-3>*{
 div.grid-container-1{
   background-color: #2196F3;
   padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, auto);
 }
 
 div.grid-container-2{
   background-color: #2196F3;
   padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
 }
 
 div.grid-container-3{
   background-color: #2196F3;
   padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: 700px 100px 600px;
 }
 
 div.item1{
@@ -30,6 +37,7 @@ div.item4{
 }
 
 div.item5{
+
 }
 
 div.item8{
