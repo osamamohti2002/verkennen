@@ -1,0 +1,47 @@
+div.grid-container-1>*, div.grid-container-2>*, div.grid-container-3>*{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+div.grid-container-1{
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+div.grid-container-2{
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+div.grid-container-3{
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+div.item1{
+
+}
+
+div.item4{
+}
+
+div.item5{
+}
+
+div.item8{
+}
+
+div.item10{
+}
+
+div.item11{
+}
+
+div.item12{
+}
+
+
