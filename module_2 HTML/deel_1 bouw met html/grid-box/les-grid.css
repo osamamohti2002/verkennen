@@ -25,8 +25,11 @@ div.grid-container-3{
   background-color: #2196F3;
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(2, 100px);
-  grid-template-rows: 700px 100px 600px;
+  grid-template-columns: 50% 25% 25% ;
+  grid-template-rows: auto auto auto;
+
+
+
 }
 
 div.item1{
