@@ -5,42 +5,32 @@
   }
 
   section.projecten {
-    /* zorg dat dit een flexbox wordt en zorg dat de items worden gewrapt */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
- 
-
   }
 
   div.project {
-    /* bepaal: opvulling, relatieve breedte tov section.projecten, tekstuitlijning (centrum), minimale breedte */
     flex-direction: column;
     flex-basis: 50px;
-   
-
   }
 
   p.logo {
-    /* bepaal: vaste hoogte */
     width: 50px;
   }
 
   p.logo img {
-    /* bepaal: relatieve breedte van de afbeelding tov div.project */
     width: 100px
   }
 
   p.language {
-    /* bepaal: font-relatieve lettergrootte */
     background-color:red ;
   }
 
   p.title {
-    /* bepaal: font-relatieve lettergrootte, letterdikte*/
     background-color: blue;
   }
+  
   p.description{
-    /* bepaal: font-relatieve lettergrootte, tekstuitlijning links*/
     background-color: yellow;
   }
