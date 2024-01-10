@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <title>base</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Base</h1>
+  <!-- input start -->
+  <form id="form">
+    <p>
+      <label>Hoeveel spelers: </label>
+      <input type="text" name="aantal_toegang" id="aantal_toegang">
+    </p>
+    <p>
+        <label>Hoeveel spelers in Vipseat:</label>
+        <input type="text" name="spelers_vipseat" id="spelers_vipseat">
+    </p>
+    <p>
+        <label>Hoelang in de Vipseat in min</label>
+        <input type="text" name="vipseat_min" id="min">
+    </p>
+    <input type="submit" id="submit_button" value="berekenen">
+  </form>
+  <!-- input end -->
+<!-- output start -->
+
+  <div id="result">
+    <h1>Result</h1>
+    <p><label>aantal spelers: </label><span id="spelers"></span></p>
+    <p><label>aantal Vipseats: </label><span id="vipseat"></span></p>
+    <p><label>aantal minuten vipseat: </label><span id="vip_min"></span></p>
+  </div>
+
+
+<!-- output end -->
+  <script>
+    const PRIJS_TOEGANG = 12.45
+    const PERIODE_VIPSEAT = 5 // minuten
+    const PRIJS_VIPSEAT = 0.65 
+
+    
+
+
+    function submit(event){
+      spelers.textContent = aantal_toegang.value;
+      vipseat.textContent = spelers_vipseat.value;
+      vip_min.textContent = min.value;
+      let aantal_toegang = Number(spelers);
+      let aantal_vipseat = Number(vipseat);
+      let time_vipseat = Number(vip_min);
+      total = aantal_toegang * aantal_vipseat * time_vipseat
+    console.log(total)  
+      
+    //   console.log(typeof aantal_toegang)
+    }
+    
+    submit_button.addEventListener('click',submit);
+
+    // prevent document from default trying to really submit
+    function form_submit(event){
+      event.preventDefault();
+    }
+    
+    form.addEventListener('submit',form_submit)
+    
+  </script>
+</body>
+</html>
