@@ -23,47 +23,40 @@
     <input type="submit" id="submit_button" value="berekenen">
   </form>
   <!-- input end -->
-<!-- output start -->
-
+  <!-- output start -->
   <div id="result">
     <h1>Result</h1>
-    <p><label>aantal spelers: </label><span id="spelers"></span></p>
-    <p><label>aantal Vipseats: </label><span id="vipseat"></span></p>
-    <p><label>aantal minuten vipseat: </label><span id="vip_min"></span></p>
+    <p><label>Aantal spelers: </label><span id="spelers"></span></p>
+    <p><label>Aantal Vipseats: </label><span id="vipseat"></span></p>
+    <p><label>Aantal minuten Vipseat: </label><span id="vip_min"></span></p>
+    <p><label>Totaal te betalen: </label><span id="totaal_betalen"></span></p>
   </div>
-
-
-<!-- output end -->
+  <!-- output end -->
   <script>
     const PRIJS_TOEGANG = 12.45
-    const PERIODE_VIPSEAT = 5 // minuten
+    const PERIODE_VIPSEAT = 5 // minutes
     const PRIJS_VIPSEAT = 0.65 
 
-    
-
-
     function submit(event){
-      spelers.textContent = aantal_toegang.value;
-      vipseat.textContent = spelers_vipseat.value;
-      vip_min.textContent = min.value;
-      let aantal_toegang = Number(spelers);
-      let aantal_vipseat = Number(vipseat);
-      let time_vipseat = Number(vip_min);
-      total = aantal_toegang * aantal_vipseat * time_vipseat
-    console.log(total)  
-      
-    //   console.log(typeof aantal_toegang)
-    }
-    
-    submit_button.addEventListener('click',submit);
-
-    // prevent document from default trying to really submit
-    function form_submit(event){
       event.preventDefault();
+
+      let aantal_toegang = Number(document.getElementById('aantal_toegang').value);
+      let aantal_vipseat = Number(document.getElementById('spelers_vipseat').value);
+      let time_vipseat = Number(document.getElementById('min').value);
+
+      let totaal_toegang = aantal_toegang * PRIJS_TOEGANG;
+      let periodes_vipseat = Math.ceil(time_vipseat / PERIODE_VIPSEAT);
+      let prijs_vipseat = periodes_vipseat * PRIJS_VIPSEAT;
+      let totaal_vipseat = aantal_vipseat * prijs_vipseat;
+      let totaal_betalen = totaal_toegang + totaal_vipseat;
+
+      spelers.textContent = aantal_toegang;
+      vipseat.textContent = aantal_vipseat;
+      vip_min.textContent = time_vipseat;
+      totaal_betalen.textContent = totaal_betalen.toFixed(2);
     }
     
-    form.addEventListener('submit',form_submit)
-    
+    document.getElementById('submit_button').addEventListener('click', submit);
   </script>
 </body>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dit is mijn header</h1>
+    <div>Hier staat nu wat tekst in </div>
+    <div id="leeg">test</div>
+    <div id="buttons"><button id="hierButton">Klik Hier</button></div>
+    <script>
+        let x = 0 
+        function KlikButtonActie(event){
+            x ++;
+            console.log('you pressed the button')
+            leeg.innerText = 'Hallo niet klikken';
+            if (x == 10){
+                console.log('x is nu gelijk 10')
+            }else{
+                console.log('hahhahah')
+            }
+        }
+        hierButton.addEventListener('click', KlikButtonActie)
+    </script>
+</body>
+</html>
