@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <title>base</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Base</h1>
+
+    <!--input strat-->
+  <form id="form">
+    <p>
+      <label>aantal Pizza small: </label>
+      <input type="text" name="pizaa_small" id="pizaa_small">
+    </p>
+    <p>
+        <label>aantal Pizza medium: </label>
+        <input type="text" name="pizza_medium" id="pizza_medium">
+      </p>
+      <p>
+        <label>aantal Pizza large: </label>
+        <input type="text" name="pizza_large" id="pizza_large">
+      </p>
+    <input type="submit" id="submit_button" value="berekenen">
+  </form>
+  <!--input end-->
+
+
+  <!-- output start-->
+  <div id="result">
+    <h1>Bonntje</h1>
+    <p><label>totaal_pizza_smaal: </label><span id="totaal_pizza_s"></span></p>
+    <p><label>totaal_pizza_medium: </label><span id="totaal_pizza_m"></span></p>
+    <p><label>totaal_pizza_large: </label><span id="totaal_pizza_l"></span></p>
+    <p><label>totaal: </label><span id="totaal"></span></p>
+  </div>
+    <!-- output end-->
+
+
+<script>
+  const PRIJS_SMALL = 6.50
+  const PRIJS_MEDIUM = 9.30
+  const PRIJS_LARGE = 12.10
+
+  function submit(event) {
+    event.preventDefault();
+    let aantal_pizza_s = Number(document.getElementById("pizaa_small").value)
+    let aantal_pizza_m = Number(document.getElementById("pizza_medium").value)
+    let aantal_pizza_l = Number(document.getElementById("pizza_large").value)
+
+    let totaal_small = aantal_pizza_s * PRIJS_SMALL
+    let totaal_medium = aantal_pizza_m * PRIJS_MEDIUM
+    let totaal_large = aantal_pizza_l * PRIJS_LARGE
+    let totaal = totaal_small + totaal_medium + totaal_large
+
+    document.getElementById("totaal_pizza_s").textContent = totaal_small.toFixed(2)
+    document.getElementById("totaal_pizza_m").textContent = totaal_medium.toFixed(2)
+    document.getElementById("totaal_pizza_l").textContent = totaal_large.toFixed(2)
+    document.getElementById("totaal").textContent = totaal.toFixed(2)
+  }
+
+  const submit_button = document.getElementById('submit_button');
+  submit_button.addEventListener('click', submit);
+
+  // prevent document from default trying to really submit
+  const form = document.getElementById('form');
+  function form_submit(event) {
+    event.preventDefault();
+  }
+  form.addEventListener('submit', submit)
+</script>
+</body>
+</html>
+
+</body>
+</html>
