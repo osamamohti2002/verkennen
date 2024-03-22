@@ -81,7 +81,7 @@ function count(event){
     counterTeam1.disabled = true;
     counterTeam2.disabled = true;
 
-    setTimeout(set_buttons_on, 1500)
+    setTimeout(set_buttons_on, 100)
 
 
 
@@ -89,6 +89,7 @@ function count(event){
     undoButton.disabled = false;
     updatescreen();
     updateSet();
+    check_winner();
 }
 counterTeam1.addEventListener('click',count);
 counterTeam2.addEventListener('click',count);
@@ -114,13 +115,30 @@ function undoLastPoint(event){
     }
     updatescreen();
 }
+
+
+
+function check_winner(){
+    if(game.team1punten >= 25){
+        alert(nameTeam1.innerText + " heeft gewonnen")
+        console.log(nameTeam1.innerText + " heeft gewonnen")
+    }else if (game.team2punten >= 25){
+        console.log(nameTeam2.innerText + " heeft gewonnen")
+        alert(nameTeam2.innerText + " heeft gewonen")
+    }
+
+    counterTeam1.disabled = true;
+    counterTeam2.disabled = true;
+
+
+}
  
  
  
 function set_buttons_on(){
     counterTeam1.disabled = false;
     counterTeam2.disabled = false;
-    alert('zebi')
+
 
 }
  
