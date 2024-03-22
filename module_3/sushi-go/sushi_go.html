@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Restaurant Menu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            margin: auto;
+            background-color: black;
+        }
+        .card {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .order-form {
+            margin-top: 10px;
+
+        }
+        .roundes{
+            color: white;
+                
+            }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Hamburger Restaurant</span>
+        <span class="roundes">Aantal roundes: 10</span>
+    </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/hamburger.png" class="card-img-top" alt="Hamburger">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Hamburger</h5>
+                    <p class="card-text">De klassieke hamburger met rundvlees, sla, tomaat, ui en saus.</p>
+                    <form class="order-form">
+                        <div class="form-group">
+                            <label for="quantity_hamburger">Aantal:</label>
+                            <input type="number" class="form-control" id="quantity_hamburger" value="1" min="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Herhaal dit voor de resterende producten -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/cheesburger.png" class="card-img-top" alt="Cheeseburger">
+                <div class="card-body">
+                    <h5 class="card-title">Cheeseburger</h5>
+                    <p class="card-text">De klassieke hamburger met kaas toegevoegd.</p>
+                    <form class="order-form">
+                        <div class="form-group">
+                            <label for="quantity_cheeseburger">Aantal:</label>
+                            <input type="number" class="form-control" id="quantity_cheeseburger" value="1" min="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Herhaal dit voor alle andere producten -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/baconburger.png" class="card-img-top" alt="Bacon Burger">
+                <div class="card-body">
+                    <h5 class="card-title">Bacon Burger</h5>
+                    <p class="card-text">Hamburger met knapperig spek toegevoegd.</p>
+                    <form class="order-form">
+                        <div class="form-group">
+                            <label for="quantity_baconburger">Aantal:</label>
+                            <input type="number" class="form-control" id="quantity_baconburger" value="1" min="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/veggieburger.png" class="card-img-top" alt="Veggie Burger">
+                <div class="card-body">
+                    <h5 class="card-title">Veggie Burger</h5>
+                    <p class="card-text">Een vegetarische optie met een plantaardige burger en groenten.</p>
+                    <form class="order-form">
+                        <div class="form-group">
+                            <label for="quantity_veggieburger">Aantal:</label>
+                            <input type="number" class="form-control" id="quantity_veggieburger" value="1" min="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/dbl-chees-burger.png" class="card-img-top" alt="Double Cheeseburger">
+                <div class="card-body">
+                    <h5 class="card-title">Double Cheeseburger</h5>
+                    <p class="card-text">Hamburger met dubbele portie kaas.</p>
+                    <form class="order-form">
+                        <div class="form-group">
+                            <label for="quantity_doublecheeseburger">Aantal:</label>
+                            <input type="number" class="form-control" id="quantity_doublecheeseburger" value="1" min="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/spyci-chiken.png" class="card-img-top" alt="Spicy Chicken Burger">
+                <div class="card-body">
+                    <h5 class="card-title">Spicy Chicken Burger</h5>
+                    <p class="card-text">Hete kipburger met jalapeños en pikante saus.</p>
+                    <form class="order-form">
+                        <div class="form-group">
+                            <label for="quantity_spicychickenburger">Aantal:</label>
+                            <input type="number" class="form-control" id="quantity_spicychickenburger" value="1" min="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/viesburger.png" class="card-img-top" alt="Fish Burger">
+                <div class="card-body">
+                    <h5 class="card-title">Fish Burger</h5>
+                    <p class="card-text">Visburger met sla en tartaarsaus.</p>
+                    <form class="order-form">
+                        <div class="form-group">
+                            <label for="quantity_fishburger">Aantal:</label>
+                            <input type="number" class="form-control" id="quantity_fishburger" value="1" min="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/bbqburger.png" class="card-img-top" alt="BBQ Burger">
+                <div class="card-body">
+                    <h5 class="card-title">BBQ Burger</h5>
+                    <p class="card-text">Hamburger met barbecuesaus en gebakken uien.</p>
+                    <form class="order-form">
+                        <div class="form-group">
+                            <label for="quantity_bbqburger">Aantal:</label>
+                            <input type="number" class="form-control" id="quantity_bbqburger" value="1" min="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/mashroum.png" class="card-img-top" alt="Mushroom Swiss Burger">
+                <div class="card-body">
+                    <h5 class="card-title">Mushroom Swiss Burger</h5>
+                    <p class="card-text">Hamburger met champignons en Zwitserse kaas.</p>
+                    <form class="order-form">
+                        <div class="form-group">
+                            <label for="quantity_mushroomswissburger">Aantal:</label>
+                            <input type="number" class="form-control" id="quantity_mushroomswissburger" value="1" min="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/tyrky-burger.png" class="card-img-top" alt="Turkey Burger">
+                <div class="card-body">
+                    <h5 class="card-title">Turkey Burger</h5>
+                    <p class="card-text">Hamburger gemaakt van kalkoenvlees.</p>
+                    <form class="order-form">
+                        <div class="form-group">
+                            <label for="quantity_turkeyburger">Aantal:</label>
+                            <input type="number" class="form-control" id="quantity_turkeyburger" value="1" min="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="media/guacamole_burger.png" class="card-img-top" alt="Guacamole Burger">
+                <div class="card-body">
+                    <h5 class="card-title">Guacamole Burger</h5>
+                    <p class="card-text">Hamburger met guacamole, tomaat en ui.</p>
+                    <form class="order-form">
+                        <div class="form-group">
+                            <label for="quantity_guacamoleburger">Aantal:</label>
+                            <input type="number" class="form-control" id="quantity_guacamoleburger" value="1" min="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Bestel</button>
+    </div>
+</div>
+
+
+<script src="shushi_go.js"></script>
+</body>
+</html>

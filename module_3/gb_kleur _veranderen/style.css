@@ -1,0 +1,47 @@
+/* #pakButton{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+    left:250px;
+    top: 50px;
+}
+
+
+
+
+.yellow{
+    background-color: yellow;
+}
+
+.black{
+    background-color: black;
+}
+
+.counter{
+    color:red;
+} */
+
+
+
+#pakButton{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+    left: 250px;
+    top: 50px;
+}
+ 
+.black{
+    background-color: black;
+ 
+}
+ 
+.yellow{
+    background-color: yellow;
+}
+ 
+#counter{
+    color: red;
+}
